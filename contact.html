@@ -16,7 +16,14 @@
       <a href="index.html" class="nav__logo-link"><img src="images/logo.png" alt="Harvesting Leland" class="nav__logo-img" /></a>
       <ul class="nav__links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
+        <li class="nav__dropdown">
+          <a href="shop.html" class="nav__dropdown-toggle">Shop <span class="nav__caret">&#9662;</span></a>
+          <ul class="nav__dropdown-menu">
+            <li><a href="shop-baked-goods.html">Baked Goods &amp; Pre-Sale</a></li>
+            <li><a href="shop-home-goods.html">Home Goods</a></li>
+            <li><a href="shop-herbal.html">Herbal &amp; Wellness</a></li>
+          </ul>
+        </li>
         <li><a href="about.html">About</a></li>
         <li><a href="connect.html">Connect</a></li>
         <li><a href="faq.html">FAQs</a></li>
@@ -190,6 +197,16 @@
     const toggle = document.getElementById('navToggle');
     const links  = document.getElementById('navLinks');
     toggle.addEventListener('click', () => { toggle.classList.toggle('open'); links.classList.toggle('open'); });
+
+    // Mobile dropdown toggle
+    document.querySelectorAll('.nav__dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        if (window.innerWidth <= 820) {
+          e.preventDefault();
+          btn.closest('.nav__dropdown').classList.toggle('open');
+        }
+      });
+    });
     const revealEls = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
