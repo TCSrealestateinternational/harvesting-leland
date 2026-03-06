@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Harvesting Leland</title>
+  <meta name="description" content="Pre-order fresh sourdough, baked goods, hand-knit home goods, and herbal wellness products from Harvesting Leland." />
+  <link rel="canonical" href="https://www.harvestingleland.com/shop.html" />
+  <link rel="stylesheet" href="css/global.css" />
+  <style>
+    .pre-sale-notice {
+      background: rgba(199,163,94,0.12);
+      border-left: 4px solid var(--wheat);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin-bottom: 2.5rem;
+    }
+    .pre-sale-notice strong { color: var(--forest); }
+    .pre-sale-notice p { color: #666; font-size: 0.92rem; margin: 0.3rem 0 0; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo-link"><img src="images/logo.png" alt="Harvesting Leland" class="nav__logo-img" /></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="connect.html">Connect</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact.html" class="btn btn--wheat">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="padding-top:5rem;">
+    <div class="page-hero__bg" style="background-image: url('images/misty-porch.jpg');"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="eyebrow" style="color:rgba(255,255,255,0.7);">Made with love</span>
+      <h1>The Shop</h1>
+      <p>Small-batch, handcrafted goods from our Kentucky farm.</p>
+    </div>
+  </div>
+
+  <!-- SHOP CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Pre-sale notice -->
+      <div class="pre-sale-notice reveal">
+        <strong>&#x23F0; Pre-Sale Orders Close Every Friday at 5 PM</strong>
+        <p>Baked goods are made fresh weekly to order. Place your pre-sale order by Friday to receive your items the following week. Local pickup and delivery details in <a href="faq.html" style="color:var(--wheat);">FAQs</a>.</p>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="shop-tabs" id="shopTabs">
+        <button class="shop-tab active" data-tab="all">All Products</button>
+        <button class="shop-tab" data-tab="baked-goods">Baked Goods &amp; Pre-Sale</button>
+        <button class="shop-tab" data-tab="home-goods">Home Goods</button>
+        <button class="shop-tab" data-tab="herbal">Herbal &amp; Wellness</button>
+      </div>
+
+      <!-- ALL PRODUCTS (default view) -->
+      <div class="shop-section active" id="tab-all">
+        <div class="product-grid reveal">
+
+          <!-- Baked Goods -->
+          <div class="product-card">
+            <div class="product-card__img">🍞</div>
+            <div class="product-card__body">
+              <span class="badge badge--forest" style="margin-bottom:0.5rem;">Pre-Sale · Baked Goods</span>
+              <h4>Classic Sourdough Loaf</h4>
+              <p class="desc">Long-fermented, naturally leavened with our heirloom starter. Available weekly. Order by Friday.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10 – $14</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">🥐</div>
+            <div class="product-card__body">
+              <span class="badge badge--forest" style="margin-bottom:0.5rem;">Pre-Sale · Baked Goods</span>
+              <h4>Specialty Bakery Items</h4>
+              <p class="desc">Seasonal focaccia, cinnamon rolls, and savory loaves. Menu rotates with the season.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$8 – $18</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">🍪</div>
+            <div class="product-card__body">
+              <span class="badge badge--forest" style="margin-bottom:0.5rem;">Pre-Sale · Baked Goods</span>
+              <h4>Seasonal Cookie Boxes</h4>
+              <p class="desc">Thoughtfully assembled boxes of specialty cookies. Perfect for gifting or treating yourself.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$18 – $28</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            </div>
+          </div>
+
+          <!-- Home Goods -->
+          <div class="product-card">
+            <div class="product-card__img">🧶</div>
+            <div class="product-card__body">
+              <span class="badge badge--wheat" style="margin-bottom:0.5rem;">Home Goods</span>
+              <h4>Hand-Knit Dishcloths</h4>
+              <p class="desc">100% cotton dishcloths knit by hand. Available in rotating seasonal colorways.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$12 – $18</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">🪡</div>
+            <div class="product-card__body">
+              <span class="badge badge--wheat" style="margin-bottom:0.5rem;">Home Goods</span>
+              <h4>Hand-Knit Market Bags</h4>
+              <p class="desc">Sturdy, stretchy cotton market bags — ideal for produce, farmers market trips, or gifting.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$24 – $36</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Shop Now</a>
+            </div>
+          </div>
+
+          <!-- Herbal -->
+          <div class="product-card">
+            <div class="product-card__img">🌿</div>
+            <div class="product-card__body">
+              <span class="badge badge--sage" style="margin-bottom:0.5rem;">Herbal &amp; Wellness</span>
+              <h4>Lavender Pillow Spray</h4>
+              <p class="desc">Handcrafted with farm-grown lavender. Mist your pillow before bed for a calm, restful night.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$14 – $20</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">🌱</div>
+            <div class="product-card__body">
+              <span class="badge badge--sage" style="margin-bottom:0.5rem;">Herbal &amp; Wellness</span>
+              <h4>Botanical Face Cream</h4>
+              <p class="desc">Small-batch, herb-infused face cream made with pure, nourishing ingredients. No fillers.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$22 – $32</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">🫙</div>
+            <div class="product-card__body">
+              <span class="badge badge--sage" style="margin-bottom:0.5rem;">Herbal &amp; Wellness</span>
+              <h4>Herbal Tinctures</h4>
+              <p class="desc">Carefully crafted herbal tinctures for everyday wellness. Seasonal and limited availability.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$18 – $30</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Shop Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BAKED GOODS TAB -->
+      <div class="shop-section" id="tab-baked-goods">
+        <h2 id="baked-goods" style="margin-bottom:0.5rem;">Baked Goods &amp; Pre-Sale</h2>
+        <p style="color:#777; margin-bottom:2rem;">All baked goods are made to order. <strong>Order by Friday 5 PM</strong> for the following week's pickup/delivery.</p>
+        <div class="product-grid reveal">
+          <div class="product-card">
+            <div class="product-card__img">🍞</div>
+            <div class="product-card__body">
+              <h4>Classic Sourdough Loaf</h4>
+              <p class="desc">Long-fermented, naturally leavened with our heirloom starter. Choose plain or seeded.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10 – $14</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img">🥐</div>
+            <div class="product-card__body">
+              <h4>Specialty Bakery Items</h4>
+              <p class="desc">Seasonal focaccia, cinnamon rolls, herbed dinner rolls, and savory loaves. Menu rotates.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$8 – $18</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img">🍪</div>
+            <div class="product-card__body">
+              <h4>Seasonal Cookie Boxes</h4>
+              <p class="desc">A rotating selection of specialty cookies. Current flavors shared weekly on Instagram.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$18 – $28</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOME GOODS TAB -->
+      <div class="shop-section" id="tab-home-goods">
+        <h2 id="home-goods" style="margin-bottom:0.5rem;">Home Goods</h2>
+        <p style="color:#777; margin-bottom:2rem;">Hand-knit with care. Every piece is one-of-a-kind and made with quality natural fibers.</p>
+        <div class="product-grid reveal">
+          <div class="product-card">
+            <div class="product-card__img">🧶</div>
+            <div class="product-card__body">
+              <h4>Hand-Knit Dishcloths</h4>
+              <p class="desc">100% cotton, lovingly knit by hand. Available in rotating seasonal colorways. Set of 2 or 4.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$12 – $18</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img">🪡</div>
+            <div class="product-card__body">
+              <h4>Hand-Knit Market Bags</h4>
+              <p class="desc">Sturdy, stretchy cotton bags with handles. Great for produce, the farmers market, or as a gift.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$24 – $36</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERBAL TAB -->
+      <div class="shop-section" id="tab-herbal">
+        <h2 id="herbal" style="margin-bottom:0.5rem;">Herbal &amp; Wellness</h2>
+        <p style="color:#777; margin-bottom:2rem;">Made with herbs grown or sourced thoughtfully. Small batch, real ingredients.</p>
+        <div class="product-grid reveal">
+          <div class="product-card">
+            <div class="product-card__img" style="background-color: var(--linen);">
+              <img src="images/wildflowers.jpg" alt="Herbal wellness" style="height:100%; object-fit:cover;" />
+            </div>
+            <div class="product-card__body">
+              <h4>Botanical Face Cream</h4>
+              <p class="desc">Herb-infused, small-batch face cream. Pure ingredients, no synthetic fillers. Available in 2 oz and 4 oz.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$22 – $32</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img">🌿</div>
+            <div class="product-card__body">
+              <h4>Pillow Sprays</h4>
+              <p class="desc">Lavender, chamomile, or seasonal blends. Mist before bed for a calm, restful sleep experience.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$14 – $20</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img">🫙</div>
+            <div class="product-card__body">
+              <h4>Herbal Tinctures</h4>
+              <p class="desc">Carefully crafted tinctures for everyday wellness support. Limited seasonal availability.</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">$18 – $30</span>
+              <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ORDER FORM PLACEHOLDER -->
+      <div id="order-form" style="margin-top: 4rem;">
+        <div class="section-header center">
+          <span class="eyebrow">Ready to Order?</span>
+          <h2>Place Your Pre-Order</h2>
+          <div class="divider divider--center"></div>
+          <p>Fill out the form below to place your order. We'll reach out to confirm details and pickup/delivery options.</p>
+        </div>
+        <div style="max-width: 680px; margin: 2rem auto 0;">
+          <div class="form-placeholder">
+            <div class="form-placeholder__icon">🛒</div>
+            <h3>Order Form Coming Soon</h3>
+            <p>This form will be powered by GoHighLevel. Once your GHL form is ready, paste the embed code here to replace this placeholder.</p>
+            <code>&lt;!-- Replace this entire .form-placeholder div with your GHL embed code --&gt;</code>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter-bar">
+    <div class="newsletter-bar__inner">
+      <div class="newsletter-bar__text">
+        <h3>Never Miss a Pre-Sale</h3>
+        <p>Get weekly menus and new product drops straight to your inbox.</p>
+      </div>
+      <div class="newsletter-bar__form">
+        <input type="email" placeholder="Your email address" aria-label="Email address" />
+        <button class="btn btn--wheat">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="logo-text">Harvesting <span>Leland</span></span>
+          <p>Handcrafted goods from our Kentucky farm. Made with love, grown with intention.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html#baked-goods">Baked Goods &amp; Pre-Sale</a></li>
+            <li><a href="shop.html#home-goods">Home Goods</a></li>
+            <li><a href="shop.html#herbal">Herbal &amp; Wellness</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="connect.html">Connect</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Harvesting Leland. All rights reserved.</span>
+        <span>Made with love on our Kentucky farm.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav (always scrolled on interior pages)
+    const nav = document.getElementById('mainNav');
+    nav.classList.add('scrolled');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 0);
+    });
+
+    // Mobile nav
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+
+    // Shop tabs
+    const tabs    = document.querySelectorAll('.shop-tab');
+    const sections = document.querySelectorAll('.shop-section');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+        tab.classList.add('active');
+        const target = document.getElementById('tab-' + tab.dataset.tab);
+        if (target) target.classList.add('active');
+      });
+    });
+
+    // Activate tab from URL hash
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      const matchTab = document.querySelector(`.shop-tab[data-tab="${hash}"]`);
+      if (matchTab) matchTab.click();
+    }
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
