@@ -7,6 +7,10 @@
   <meta name="description" content="Hand-knit dishcloths, market bags, and home goods lovingly made on our Kentucky farm." />
   <link rel="canonical" href="https://www.harvestingleland.com/shop-home-goods.html" />
   <link rel="stylesheet" href="css/global.css" />
+  <!-- Snipcart v3 -->
+  <link rel="preconnect" href="https://app.snipcart.com" />
+  <link rel="preconnect" href="https://cdn.snipcart.com" />
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.css" />
 </head>
 <body>
 
@@ -29,6 +33,10 @@
         <li><a href="faq.html">FAQs</a></li>
         <li><a href="contact.html" class="btn btn--wheat">Contact</a></li>
       </ul>
+            <button class="snipcart-checkout nav__cart-btn" aria-label="View cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="snipcart-items-count nav__cart-count"></span>
+      </button>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -70,7 +78,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$12 – $16</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="dishcloths-set-2" data-item-name="Hand-Knit Dishcloths — Set of 2" data-item-price="12.00" data-item-url="/shop-home-goods.html" data-item-description="100% cotton, lovingly knit by hand. Durable, absorbent, and beautiful. Seasonal colorways." data-item-custom1-name="Colorway" data-item-custom1-options="Standard|Premium Colorway[+4.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -83,7 +91,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$22 – $28</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="dishcloths-set-4" data-item-name="Hand-Knit Dishcloths — Set of 4" data-item-price="22.00" data-item-url="/shop-home-goods.html" data-item-description="A full set of four. Perfect for a gift or stocking the kitchen. Mix of colors or a coordinating set." data-item-custom1-name="Colorway" data-item-custom1-options="Standard|Premium Colorway[+6.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -96,7 +104,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$24 – $32</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="market-bag" data-item-name="Hand-Knit Market Bag" data-item-price="24.00" data-item-url="/shop-home-goods.html" data-item-description="Sturdy, stretchy cotton market bag with handles. Ideal for produce, the farmers market, or as a thoughtful gift." data-item-custom1-name="Color/Size" data-item-custom1-options="Standard|Large or Custom Color[+8.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -109,7 +117,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$38 – $48</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="knit-gift-set" data-item-name="Knit Gift Set" data-item-price="38.00" data-item-url="/shop-home-goods.html" data-item-description="A curated gift set — dishcloths, a market bag, and a handwritten note. Beautifully wrapped and ready to give." data-item-custom1-name="Size" data-item-custom1-options="Standard|Deluxe[+10.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -128,21 +136,16 @@
 
       </div>
 
-      <!-- ORDER FORM -->
-      <div id="order-form" style="margin-top:4rem;">
+      <!-- CART CTA -->
+      <div id="order-form" style="margin-top:4rem; text-align:center;">
         <div class="section-header center">
           <span class="eyebrow">Ready to Order?</span>
-          <h2>Order Home Goods</h2>
+          <h2>Review Your Cart</h2>
           <div class="divider divider--center"></div>
-          <p>Fill out the form below. We'll confirm availability and shipping or pickup details by email.</p>
+          <p>Add items above, then check out securely. We'll confirm colorway availability and any pickup or shipping details by email.</p>
         </div>
-        <div style="max-width:680px; margin:2rem auto 0;">
-          <div class="form-placeholder">
-            <div class="form-placeholder__icon">🛒</div>
-            <h3>Home Goods Order Form</h3>
-            <p>This form will be powered by GoHighLevel. Paste your GHL embed code here when ready.</p>
-            <code>&lt;!-- Replace with GHL Home Goods Order form embed --&gt;</code>
-          </div>
+        <div style="margin-top:2rem;">
+          <button class="snipcart-checkout btn btn--wheat" style="font-size:1rem; padding:0.9rem 2.5rem;">View Cart &amp; Checkout</button>
         </div>
       </div>
 
@@ -236,5 +239,10 @@
     }, { threshold: 0.1 });
     revealEls.forEach(el => observer.observe(el));
   </script>
+  <div hidden id="snipcart"
+    data-api-key="YWMwYTRiYzMtM2RiMC00MjJhLTg3ZTUtMTU1OWIxNTFlMjMwNjM5MDgzNjMzMDQ2NzQzNzcx"
+    data-config-modal-style="side">
+  </div>
+  <script async src="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.js"></script>
 </body>
 </html>

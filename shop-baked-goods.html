@@ -18,6 +18,10 @@
     .pre-sale-notice strong { color: var(--forest); }
     .pre-sale-notice p { color: #666; font-size: 0.92rem; margin: 0.3rem 0 0; }
   </style>
+  <!-- Snipcart v3 -->
+  <link rel="preconnect" href="https://app.snipcart.com" />
+  <link rel="preconnect" href="https://cdn.snipcart.com" />
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.css" />
 </head>
 <body>
 
@@ -40,6 +44,10 @@
         <li><a href="faq.html">FAQs</a></li>
         <li><a href="contact.html" class="btn btn--wheat">Contact</a></li>
       </ul>
+            <button class="snipcart-checkout nav__cart-btn" aria-label="View cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="snipcart-items-count nav__cart-count"></span>
+      </button>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -87,7 +95,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$10 – $14</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="sourdough-classic" data-item-name="Classic Sourdough Loaf" data-item-price="10.00" data-item-url="/shop-baked-goods.html" data-item-description="Pre-sale item - local pickup. Long-fermented with our heirloom starter." data-item-custom1-name="Size" data-item-custom1-options="1 lb / $10|2 lb / $14[+4.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</button>
           </div>
         </div>
 
@@ -100,7 +108,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$12 – $15</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="sourdough-seeded" data-item-name="Seeded Sourdough Loaf" data-item-price="12.00" data-item-url="/shop-baked-goods.html" data-item-description="Pre-sale item - local pickup. Classic loaf topped with your choice of seeds." data-item-custom1-name="Topping" data-item-custom1-options="Sesame|Poppy|Sunflower|Everything[+3.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</button>
           </div>
         </div>
 
@@ -113,7 +121,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$10 – $14</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="sourdough-focaccia" data-item-name="Sourdough Focaccia" data-item-price="10.00" data-item-url="/shop-baked-goods.html" data-item-description="Pre-sale item - local pickup. Olive-oiled with rosemary and sea salt." data-item-custom1-name="Size" data-item-custom1-options="Half Sheet|Full Sheet[+4.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</button>
           </div>
         </div>
 
@@ -126,7 +134,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$14 – $22</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="cinnamon-rolls" data-item-name="Sourdough Cinnamon Rolls" data-item-price="14.00" data-item-url="/shop-baked-goods.html" data-item-description="Pre-sale item - local pickup. Sourdough-leavened with cream cheese frosting." data-item-custom1-name="Quantity" data-item-custom1-options="Half Dozen (6)|Full Dozen (12)[+8.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</button>
           </div>
         </div>
 
@@ -139,7 +147,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$18 – $28</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="seasonal-cookie-box" data-item-name="Seasonal Cookie Box" data-item-price="18.00" data-item-url="/shop-baked-goods.html" data-item-description="Pre-sale item - local pickup. Specialty cookies rotating with the season." data-item-custom1-name="Box Size" data-item-custom1-options="Small (6 cookies)|Large (12 cookies)[+10.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Pre-Order</button>
           </div>
         </div>
 
@@ -158,21 +166,16 @@
 
       </div>
 
-      <!-- ORDER FORM -->
+      <!-- CART CTA -->
       <div id="order-form" style="margin-top:4rem;">
         <div class="section-header center">
           <span class="eyebrow">Ready to Order?</span>
-          <h2>Place Your Pre-Order</h2>
+          <h2>Review Your Cart</h2>
           <div class="divider divider--center"></div>
-          <p>Fill out the form below. We'll confirm your order and pickup details by email within 24 hours.</p>
+          <p>Pre-orders close every <strong>Friday at 5 PM</strong>. Once you check out, we'll confirm your pickup details by email within 24 hours.</p>
         </div>
-        <div style="max-width:680px; margin:2rem auto 0;">
-          <div class="form-placeholder">
-            <div class="form-placeholder__icon">🛒</div>
-            <h3>Baked Goods Pre-Order Form</h3>
-            <p>This form will be powered by GoHighLevel. Paste your GHL embed code here when ready.</p>
-            <code>&lt;!-- Replace with GHL Baked Goods Pre-Order form embed --&gt;</code>
-          </div>
+        <div style="text-align:center; margin-top:0;">
+          <button class="snipcart-checkout btn btn--wheat" style="font-size:1rem; padding:0.9rem 2.5rem;">View Cart &amp; Checkout</button>
         </div>
       </div>
 
@@ -267,5 +270,10 @@
     }, { threshold: 0.1 });
     revealEls.forEach(el => observer.observe(el));
   </script>
+  <div hidden id="snipcart"
+    data-api-key="YWMwYTRiYzMtM2RiMC00MjJhLTg3ZTUtMTU1OWIxNTFlMjMwNjM5MDgzNjMzMDQ2NzQzNzcx"
+    data-config-modal-style="side">
+  </div>
+  <script async src="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.js"></script>
 </body>
 </html>

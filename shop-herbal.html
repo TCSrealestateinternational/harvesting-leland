@@ -7,6 +7,10 @@
   <meta name="description" content="Small-batch herbal face creams, pillow sprays, and tinctures made with farm-grown herbs at Harvesting Leland." />
   <link rel="canonical" href="https://www.harvestingleland.com/shop-herbal.html" />
   <link rel="stylesheet" href="css/global.css" />
+  <!-- Snipcart v3 -->
+  <link rel="preconnect" href="https://app.snipcart.com" />
+  <link rel="preconnect" href="https://cdn.snipcart.com" />
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.css" />
 </head>
 <body>
 
@@ -29,6 +33,10 @@
         <li><a href="faq.html">FAQs</a></li>
         <li><a href="contact.html" class="btn btn--wheat">Contact</a></li>
       </ul>
+            <button class="snipcart-checkout nav__cart-btn" aria-label="View cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="snipcart-items-count nav__cart-count"></span>
+      </button>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -77,7 +85,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$22</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="botanical-face-cream-2oz" data-item-name="Botanical Face Cream — 2 oz" data-item-price="22.00" data-item-url="/shop-herbal.html" data-item-description="Herb-infused, small-batch face cream. Pure, nourishing ingredients. No synthetic fillers." data-item-image="/images/wildflowers.jpg" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -92,7 +100,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$32</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="botanical-face-cream-4oz" data-item-name="Botanical Face Cream — 4 oz" data-item-price="32.00" data-item-url="/shop-herbal.html" data-item-description="Same beloved formula in a larger size. Great for daily use or gifting. Seasonal botanical blends." data-item-image="/images/garden-hands.jpg" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -115,7 +123,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$14</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="lavender-sleep-spray-2oz" data-item-name="Lavender Sleep Spray — 2 oz" data-item-price="14.00" data-item-url="/shop-herbal.html" data-item-description="Handcrafted with farm-grown lavender. Mist your pillow before bed for a calm, restful night." style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -128,7 +136,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$14</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="chamomile-herb-blend-2oz" data-item-name="Chamomile &amp; Herb Blend — 2 oz" data-item-price="14.00" data-item-url="/shop-herbal.html" data-item-description="A gentle blend of chamomile and calming herbs. Soft, floral, and deeply relaxing." style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -141,7 +149,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$20</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="seasonal-blend-spray-4oz" data-item-name="Seasonal Pillow Spray — 4 oz" data-item-price="20.00" data-item-url="/shop-herbal.html" data-item-description="A larger size of our rotating seasonal blend. Current scent announced on Instagram. Great for gifting." style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -165,7 +173,7 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$18 – $24</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="herbal-tincture-1oz" data-item-name="Seasonal Herbal Tincture — 1 oz" data-item-price="18.00" data-item-url="/shop-herbal.html" data-item-description="Carefully crafted tinctures using herbs grown or sourced with intention. Seasonal and limited availability." data-item-custom1-name="Formula" data-item-custom1-options="Standard|Enhanced Blend[+6.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
@@ -178,27 +186,22 @@
           </div>
           <div class="product-card__footer">
             <span class="product-card__price">$28 – $36</span>
-            <a href="#order-form" class="btn btn--wheat" style="font-size:0.75rem; padding:0.45rem 1rem;">Order Now</a>
+            <button class="snipcart-add-item btn btn--wheat" data-item-id="herbal-tincture-2oz" data-item-name="Seasonal Herbal Tincture — 2 oz" data-item-price="28.00" data-item-url="/shop-herbal.html" data-item-description="A larger supply of our seasonal tinctures. Current formulas and availability announced seasonally." data-item-custom1-name="Formula" data-item-custom1-options="Standard|Enhanced Blend[+8.00]" style="font-size:0.75rem; padding:0.45rem 1rem;">Add to Cart</button>
           </div>
         </div>
 
       </div>
 
-      <!-- ORDER FORM -->
-      <div id="order-form">
+      <!-- CART CTA -->
+      <div id="order-form" style="margin-top:4rem; text-align:center;">
         <div class="section-header center">
           <span class="eyebrow">Ready to Order?</span>
-          <h2>Order Herbal &amp; Wellness Products</h2>
+          <h2>Review Your Cart</h2>
           <div class="divider divider--center"></div>
-          <p>Fill out the form below. We'll confirm availability and shipping or pickup details by email.</p>
+          <p>Add items above, then check out securely. We'll confirm availability and any delivery details by email.</p>
         </div>
-        <div style="max-width:680px; margin:2rem auto 0;">
-          <div class="form-placeholder">
-            <div class="form-placeholder__icon">🌿</div>
-            <h3>Herbal &amp; Wellness Order Form</h3>
-            <p>This form will be powered by GoHighLevel. Paste your GHL embed code here when ready.</p>
-            <code>&lt;!-- Replace with GHL Herbal &amp; Wellness Order form embed --&gt;</code>
-          </div>
+        <div style="margin-top:2rem;">
+          <button class="snipcart-checkout btn btn--wheat" style="font-size:1rem; padding:0.9rem 2.5rem;">View Cart &amp; Checkout</button>
         </div>
       </div>
 
@@ -292,5 +295,10 @@
     }, { threshold: 0.1 });
     revealEls.forEach(el => observer.observe(el));
   </script>
+  <div hidden id="snipcart"
+    data-api-key="YWMwYTRiYzMtM2RiMC00MjJhLTg3ZTUtMTU1OWIxNTFlMjMwNjM5MDgzNjMzMDQ2NzQzNzcx"
+    data-config-modal-style="side">
+  </div>
+  <script async src="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.js"></script>
 </body>
 </html>

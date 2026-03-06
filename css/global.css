@@ -974,6 +974,44 @@ p:last-child { margin-bottom: 0; }
   .nav__dropdown-menu a { padding: 0.5rem 1rem !important; }
 }
 
+/* --- Snipcart Cart Button (nav) --- */
+.nav__cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  border-radius: var(--radius);
+  color: var(--white);
+  transition: color var(--transition), background var(--transition);
+  margin-left: 0.25rem;
+  flex-shrink: 0;
+}
+.nav.scrolled .nav__cart-btn { color: var(--forest); }
+.nav__cart-btn:hover { background: rgba(199,163,94,0.15); color: var(--wheat); }
+.nav__cart-btn svg { display: block; }
+.nav__cart-count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: var(--wheat);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 0.6rem;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 2px;
+  pointer-events: none;
+}
+
 /* --- Responsive helpers --- */
 @media (max-width: 480px) {
   .hero__buttons { flex-direction: column; }

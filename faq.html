@@ -7,6 +7,10 @@
   <meta name="description" content="Answers to common questions about pre-sale ordering, local pickup, shipping, herbal products, and visiting Harvesting Leland." />
   <link rel="canonical" href="https://www.harvestingleland.com/faq.html" />
   <link rel="stylesheet" href="css/global.css" />
+  <!-- Snipcart v3 -->
+  <link rel="preconnect" href="https://app.snipcart.com" />
+  <link rel="preconnect" href="https://cdn.snipcart.com" />
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.css" />
 </head>
 <body>
 
@@ -29,6 +33,10 @@
         <li><a href="faq.html" class="active">FAQs</a></li>
         <li><a href="contact.html" class="btn btn--wheat">Contact</a></li>
       </ul>
+            <button class="snipcart-checkout nav__cart-btn" aria-label="View cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="snipcart-items-count nav__cart-count"></span>
+      </button>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -411,5 +419,10 @@
     }, { threshold: 0.1 });
     revealEls.forEach(el => observer.observe(el));
   </script>
+  <div hidden id="snipcart"
+    data-api-key="YWMwYTRiYzMtM2RiMC00MjJhLTg3ZTUtMTU1OWIxNTFlMjMwNjM5MDgzNjMzMDQ2NzQzNzcx"
+    data-config-modal-style="side">
+  </div>
+  <script async src="https://cdn.snipcart.com/themes/v3.7.2/default/snipcart.js"></script>
 </body>
 </html>
