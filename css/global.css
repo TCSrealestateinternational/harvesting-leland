@@ -312,23 +312,35 @@ p:last-child { margin-bottom: 0; }
   justify-content: space-between;
   gap: 3rem;
 }
-.hero__text { max-width: 520px; }
+.hero__text { max-width: 480px; }
 .hero__logo-feature {
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.hero__logo-big {
-  width: 320px;
-  max-width: 38vw;
+.hero__logo-wrap {
+  background: #ffffff;
   border-radius: 50%;
-  /* white glow behind the oval */
-  filter: drop-shadow(0 0 18px rgba(255,255,255,0.75)) drop-shadow(0 0 40px rgba(255,255,255,0.35));
+  padding: 2.5rem;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.25), 0 0 80px rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__logo-big {
+  width: 480px;
+  max-width: 42vw;
+  display: block;
+}
+@media (max-width: 960px) {
+  .hero__logo-big { width: 340px; max-width: 44vw; }
+  .hero__logo-wrap { padding: 1.75rem; }
 }
 @media (max-width: 860px) {
-  .hero__split { flex-direction: column; text-align: center; }
-  .hero__logo-big { width: 220px; max-width: 60vw; }
+  .hero__split { flex-direction: column-reverse; text-align: center; }
+  .hero__logo-big { width: 260px; max-width: 65vw; }
+  .hero__logo-wrap { padding: 1.5rem; }
   .hero__text { max-width: 100%; }
   .hero__buttons { justify-content: center; }
 }
@@ -905,19 +917,29 @@ p:last-child { margin-bottom: 0; }
 
 .nav__dropdown-menu {
   position: absolute;
-  top: calc(100% + 1rem);
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%) translateY(-6px);
+  transform: translateX(-50%) translateY(-4px);
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: 0 8px 28px rgba(42,42,42,0.14);
   min-width: 230px;
-  padding: 0.4rem 0;
+  /* Transparent top padding bridges the gap so hover doesn't break */
+  padding: 0.6rem 0 0.4rem;
+  border-top: 2px solid var(--wheat);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.22s ease, transform 0.22s ease;
-  border-top: 2px solid var(--wheat);
   z-index: 200;
+}
+/* Invisible bridge between toggle and menu — prevents hover gap */
+.nav__dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  height: 1rem;
 }
 .nav__dropdown:hover .nav__dropdown-menu {
   opacity: 1;
